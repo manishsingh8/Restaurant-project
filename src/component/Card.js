@@ -7,8 +7,8 @@ const Card = ({ foodApi }) => {
      <div className="main-body">
       {foodApi.map((currItem) => {
         return (
-          <>
-            <section className="main-container">
+          <React.Fragment key={currItem.id}>
+            <section className="main-container"  >
               <div className="card" style={{ width: "18rem", height: "auto" }}>
                 <div className="images">
                   <img
@@ -26,7 +26,7 @@ const Card = ({ foodApi }) => {
                 </div>
               </div>
             </section>
-          </>
+          </React.Fragment>
         );
       })}
       </div>

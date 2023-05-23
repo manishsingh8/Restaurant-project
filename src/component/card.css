@@ -12,6 +12,7 @@
   }
   
   .main-container {
+
     display: flex;
     align-items: stretch; /* Ensures cards have the same height */
     margin-bottom: 20px;
@@ -25,4 +26,7 @@
   .card-img-top {
     height: 200px; /* Adjust the height of the image as needed */
   }
+  /* .card-body{
+    height: auto;
+  } */
   

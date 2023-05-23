@@ -2,7 +2,7 @@ const FoodApi =[
          {
             id:1,
             image:"images/bread.jpg",
-            name:"maggie",
+            name:"Bread",
             category:"breakfast",
             price:12,
             description:
@@ -10,8 +10,8 @@ const FoodApi =[
          },
          {
             id:2,
-            image:"images/bread.jpg",
-            name:"maggie",
+            image:"images/maggi.jpg",
+            name:"Maggi",
             category:"breakfast",
             price:12,
             description:
@@ -19,8 +19,8 @@ const FoodApi =[
          },
          {
             id:3,
-            image:"images/bread.jpg",
-            name:"maggie",
+            image:"images/pizza.jpg",
+            name:"Pizza",
             category:"breakfast",
             price:12,
             description:
@@ -28,8 +28,8 @@ const FoodApi =[
          },
          {
             id:4,
-            image:"images/bread.jpg",
-            name:"maggie",
+            image:"images/burger1.jpg",
+            name:"Burger",
             category:"breakfast",
             price:12,
             description:
@@ -37,8 +37,8 @@ const FoodApi =[
          },
          {
             id:5,
-            image:"images/bread.jpg",
-            name:"maggie",
+            image:"images/Puri.jpg",
+            name:"Puri",
             category:"breakfast",
             price:12,
             description:
@@ -46,8 +46,8 @@ const FoodApi =[
          },
          {
             id:6,
-            image:"images/bread.jpg",
-            name:"maggie",
+            image:"images/sandwich1.jpg",
+            name:"Sandwich",
             category:"breakfast",
             price:12,
             description:
@@ -55,8 +55,8 @@ const FoodApi =[
          },
          {
             id:7,
-            image:"images/bread.jpg",
-            name:"maggie",
+            image:"images/chicken.jpg",
+            name:"Chicken",
             category:"breakfast",
             price:12,
             description:
@@ -64,8 +64,8 @@ const FoodApi =[
          },
          {
             id:8,
-            image:"images/bread.jpg",
-            name:"maggie",
+            image:"images/fruitsalad.jpg",
+            name:"Fruit Salad",
             category:"breakfast",
             price:12,
             description:
@@ -73,8 +73,8 @@ const FoodApi =[
          },
          {
             id:9,
-            image:"images/bread.jpg",
-            name:"maggie",
+            image:"images/vegroll.jpg",
+            name:"Veg-Roll",
             category:"breakfast",
             price:12,
             description:
@@ -82,8 +82,8 @@ const FoodApi =[
          },
          {
             id:10,
-            image:"images/bread.jpg",
-            name:"maggie",
+            image:"images/nan.jpg",
+            name:"Nan-roti",
             category:"breakfast",
             price:12,
             description:

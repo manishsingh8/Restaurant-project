@@ -1,30 +1,35 @@
 import React from "react";
-import './style.css';
+import './card.css';
 
 const Card = ({ foodApi }) => {
   return (
     <>
+     <div className="main-body">
       {foodApi.map((currItem) => {
-
-        return (           
+        return (
           <>
-            <section className="main-container" >
-            <div className="card"  style={{ width: "18rem" }}>
-              <img src=" " className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">{currItem.name}</h5>
-                <p className="card-text">
-                  {currItem.description}
-                </p>
-                <a href="/" className="btn btn-primary">
-                  Order Now
-                </a>
+            <section className="main-container">
+              <div className="card" style={{ width: "18rem", height: "auto" }}>
+                <div className="images">
+                  <img
+                    src={currItem.image}
+                    className="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title">{currItem.name}</h5>
+                  <p className="card-text">{currItem.description}</p>
+                  <a href="/" className="btn btn-primary">
+                    Order Now
+                  </a>
+                </div>
               </div>
-            </div>
             </section>
           </>
         );
       })}
+      </div>
     </>
   );
 };

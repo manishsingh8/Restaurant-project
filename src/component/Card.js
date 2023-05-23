@@ -6,20 +6,23 @@ const Card = ({ foodApi }) => {
     <>
      <div className="main-body">
       {foodApi.map((currItem) => {
+
+        const {id,image,name,description} = currItem;
+
         return (
-          <React.Fragment key={currItem.id}>
+          <React.Fragment key={id}>
             <section className="main-container"  >
               <div className="card" style={{ width: "18rem", height: "auto" }}>
                 <div className="images">
                   <img
-                    src={currItem.image}
+                    src={image}
                     className="card-img-top"
                     alt="..."
                   />
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">{currItem.name}</h5>
-                  <p className="card-text">{currItem.description}</p>
+                  <h5 className="card-title">{name}</h5>
+                  <p className="card-text">{description}</p>
                   <a href="/" className="btn btn-primary">
                     Order Now
                   </a>

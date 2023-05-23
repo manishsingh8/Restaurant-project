@@ -21,10 +21,12 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-around;
+    
 }
 .btn-group_item{
     border: none;
     background-color: aliceblue;
+    text-transform: capitalize;
 }
 .btn-group_item:hover{
     font-size: large;

@@ -4,6 +4,15 @@ import FoodApi from "./FoodApi";
 import Card from "./Card";
 import './style.css';
 
+
+
+const   uniqueCatagory =[...new Set (FoodApi.map((currEle)=>{
+  return currEle.category;
+}))];
+
+console.log(uniqueCatagory);
+
+
 const Basic = () => {
            const[food,setFood] = useState(FoodApi);
            console.log(food);
@@ -19,11 +28,13 @@ const Basic = () => {
      <nav>
        <div className="navbar">
         <div className="btn-group">
-          <button className="btn-group_item" onClick={()=>filterItem("breakfast")}>BreakFast</button>
-          <button className="btn-group_item" onClick={()=>filterItem("lunch")}>Lunch</button>
-          <button className="btn-group_item" onClick={()=>filterItem("snacks")}>Snacks</button>
-          <button className="btn-group_item" onClick={()=>filterItem("dinner")}>Dinner</button>
-          <button className="btn-group_item" onClick={()=>setFood(FoodApi)}>All</button>
+        {
+          uniqueCatagory.map((currEle,index)=>{
+             return(
+              <button className="btn-group_item" key={index}>{currEle}</button>
+             )
+          })
+        }
         </div>
        </div>
 

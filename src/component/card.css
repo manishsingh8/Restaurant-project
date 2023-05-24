@@ -10,21 +10,22 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  
+  .card {
+    width: 22rem;
+    height:33rem; /* Set a fixed height for the card */
+    background-color: rgb(188, 244, 226);
+    margin-bottom: 1rem;
+  }
   .main-container {
-
     display: flex;
     align-items: stretch; /* Ensures cards have the same height */
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   
-  .card {
-    width: 18rem;
-    height: auto; /* Set a fixed height for the card */
-  }
+  
   
   .card-img-top {
-    height: 200px; /* Adjust the height of the image as needed */
+    height: 250px; /* Adjust the height of the image as needed */
   }
   /* .card-body{
     height: auto;

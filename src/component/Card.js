@@ -12,7 +12,7 @@ const Card = ({ foodApi }) => {
         return (
           <React.Fragment key={id}>
             <section className="main-container"  >
-              <div className="card" style={{ width: "18rem", height: "auto" }}>
+              <div className="card" >
                 <div className="images">
                   <img
                     src={image}

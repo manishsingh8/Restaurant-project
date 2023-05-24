@@ -3,10 +3,10 @@ import React, { useReducer } from 'react'
 
 
  const reducer =(state,action)=>{
-    if(action.type ="INCR"){
+    if(action.type ==="INCR"){
         state = state + 1;
     }
-    if(action.type = "DCR"){
+    if(state >0 && action.type === "DCR"){
         state = state - 1;
     }
    return state;

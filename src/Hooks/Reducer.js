@@ -9,7 +9,7 @@ import React, { useReducer } from 'react'
     if(state >0 && action.type === "DCR"){
         state = state - 1;
     }
-   return state;
+    return state;
  };
 
 

@@ -1,0 +1,94 @@
+*{
+      margin:0;
+      padding:0;
+}
+
+.main-div{
+    height:100vh;
+    width:100vw;
+    background-color: rgb(5, 125, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.child_div{
+       height:60%;
+       width:22%;
+}
+.img{
+    height:5rem;
+    width:5rem;
+    margin-left: 33%;
+}
+
+.addItems{
+    height:2rem;
+    width:100%;
+    display: flex;
+    border-radius: 2px;
+    background-color: white;
+    border:2px solid white;
+    align-items: center;
+}
+.addIcon{
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+.addIcon:hover{
+    color:rgb(34, 239, 34);
+}
+.form-control{
+    height:2rem;
+    width:95%;
+    text-decoration: none;
+    border:none;
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .eachItem{
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+    background-color: rgb(24, 24, 234);
+  }
+  .eachItem:hover{
+    background-color: white;
+  }
+  .eachItem h6{
+         padding-left: 1rem;
+  }
+.todoBtn{
+    width:5rem;
+    position: absolute;
+    top:5px;
+    left:4rem;
+    height: auto;
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;
+    margin-left: 12rem;
+}
+.todoBtn:hover{
+    cursor: pointer;
+}
+.edit:hover{
+    color:rgb(34, 239, 34);
+}
+.delete:hover{
+    color:crimson;
+}
+.btn{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 30%;
+    border: 2px solid black;
+    background-color: rebeccapurple;
+}
+.btn:hover{
+    background-color:crimson;
+    color: white;
+}

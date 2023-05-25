@@ -57,9 +57,10 @@
     background-color:  rgb(9, 57, 214);
     border-radius: 4px;
     align-items: center;
+    color:white;
   }
   .eachItem:hover{
-    background-color: white;
+    background-color:rgb(1, 77, 95);
   }
   .eachItem:hover .edit{
     color:rgb(34, 239, 34);

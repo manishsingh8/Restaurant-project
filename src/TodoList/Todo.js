@@ -1,10 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
+
+const getLocalData = () => {
+    const lists = localStorage.getItem("listItem");
+
+    if(lists){
+        return JSON.parse(lists);
+    }else{
+        return [];
+    }
+}
 
 const Todo = () => {
 
     const [inputData,setInputData] = useState("");
-    const [addItem,setAddItem] = useState([]);
+    const [addItem,setAddItem] = useState(getLocalData());
 
     const addItems =()=>{
         if(!inputData){
@@ -28,7 +38,14 @@ const Todo = () => {
         });
         setAddItem(updatedItem);
     }
-
+    // remove all Items from list
+    const removeAll =()=>{
+        setAddItem([]);
+    }
+    // add data to localStorage
+    useEffect(()=>{
+          localStorage.setItem("listItem",JSON.stringify(addItem));
+    },[addItem]);
   return (
     <>
       <div className="main-div">
@@ -62,11 +79,7 @@ const Todo = () => {
                         )
                     })
                 }
-
-                
-
-
-                <button className='btn' data-sm-link-text="Remove all">
+                <button className='btn' onClick={removeAll} >
                     Delete List
                 </button>
             </div>

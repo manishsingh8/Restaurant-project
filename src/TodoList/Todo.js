@@ -11,9 +11,22 @@ const Todo = () => {
             alert("please add item first");
         }
         else{
-            setAddItem([...addItem,inputData]);
-        }
-           
+            const newInputData = {
+                id:new Date().getTime().toString(),
+                name:inputData,
+            }
+            setAddItem([...addItem,newInputData]);
+            setInputData("");
+        }      
+    }
+    // delete item in the list
+    const deleteItem =(index)=>{
+        const updatedItem = addItem.filter((currEle)=>{
+            return(
+                currEle.id !== index
+            )
+        });
+        setAddItem(updatedItem);
     }
 
   return (
@@ -27,7 +40,7 @@ const Todo = () => {
             </figure>
             <div className="addItems">
                 <input type="text"
-                placeholder='Add item'
+                placeholder='✍️Add item'
                 className='form-control'
                 value={inputData}
                 onChange={(event)=>{setInputData(event.target.value)}}
@@ -37,13 +50,13 @@ const Todo = () => {
             <div className="showItems">
                 {/* show added item */}
                 {
-                    addItem.map((currItem,index)=>{
+                    addItem.map((currItem)=>{
                         return(
-                            <div className='eachItem'>
-                                <h6>{currItem}</h6> 
+                            <div className='eachItem' key={currItem.id}>
+                                <h6>{currItem.name}</h6> 
                                 <div className='todoBtn'>
                                 <i className="fa-solid fa-pen-to-square edit"></i>
-                                <i className="fa-solid fa-trash delete"></i>
+                                <i className="fa-solid fa-trash delete" onClick={()=>deleteItem(currItem.id)}></i>
                                 </div>
                             </div>
                         )

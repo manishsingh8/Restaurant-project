@@ -1,7 +1,5 @@
 import React, { useReducer } from 'react'
 
-
-
  const reducer =(state,action)=>{
     if(action.type ==="INCR"){
         state = state + 1;

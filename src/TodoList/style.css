@@ -21,7 +21,10 @@
     width:5rem;
     margin-left: 33%;
 }
-
+.text{
+  margin-left: "23%";
+   color: "white"
+}
 .addItems{
     height:2rem;
     width:100%;
@@ -99,10 +102,90 @@
     background-color:crimson;
     color: white;
 }
+@media screen and (max-width: 1300px){
+  .text{
+    font-size: 20px;
+    margin-left: 15%;
+    color:white;
+   }
+         
+}
 
-@media screen and(max-width:"990px") {
-          .child_div {
-            height: 60%;
-            width: 60%;
-                  }
+@media screen and (max-width: 990px) {
+
+   .text{
+    font-size: 26px;
+    margin-left: 11%;
+    color:white;
+   }
+  .child_div {
+      height: 60%;
+      width: 45%;
+  }
+  .form-control::placeholder{
+    font-size: 25px;
+  }
+  .addItems{
+    height:3.5rem;
+  }
+  .eachItem{
+    height:3.5rem;
+    align-items: center;
+  }
+  .eachItem h6{
+    font-size: 25px;
+  }
+  .todoBtn{
+    margin-top: 13px;
+  }
+ 
+  .btn{
+    height:3rem;
+    width:8rem;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .text{
+    font-size: 18px;
+    margin-left: 14%;
+    color:white;
+   }
+   .child_div{
+    width:70%;
+  }
+  .form-control::placeholder{
+    font-size: 20px;
+  }
+  .eachItem h6{
+    font-size: 20px;
+  }
+  .addItems{
+    height:2.5rem;
+  }
+  .eachItem{
+    height:2.5rem;
+    align-items: center;
+  }
+  .todoBtn{
+    margin-top: 4px;
+  }
+   .btn{
+    margin-left: 25%;
+  }
+}
+@media screen and (min-width:1300px){
+  .text{
+    font-size: 18px;
+    margin-left: 14%;
+    color:white;
+   }
+   .child_div{
+    width:20%;
+    justify-content: center;
+  }
+  .todoBtn{
+    margin-top: 4px;
+  }
 }

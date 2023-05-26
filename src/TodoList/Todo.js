@@ -76,7 +76,7 @@ const Todo = () => {
         <div className="child_div">
           <figure className="image">
             <img src="./images/todo.jpg" alt="todo image" className="img" />
-            <figcaption style={{ marginLeft: "23%", color: "white" }}>
+            <figcaption className="text">
               Add your list item here
             </figcaption>
           </figure>
